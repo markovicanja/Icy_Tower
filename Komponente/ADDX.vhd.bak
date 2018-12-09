@@ -1,0 +1,31 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ADD is
+
+	generic
+	(
+		size : natural := 16
+	);
+
+	port 
+	(
+		A	: in  std_logic_vector(size-1 downto 0);
+		B	: in std_logic_vector(size-1 downto 0);
+		C	: in std_logic_vector(1);
+		F	: out std_logic_vector(size-1 downto 0);
+		Ci	: out std_logic_vector(1);
+	);
+
+end entity;
+
+architecture rtl of ADD is
+begin
+
+	process (A,B)
+	begin
+		F <= std_logic_vector(unsigned(A) + unsigned(B) + unsigned(C));
+		Ci <= 0;
+	end process;
+end rtl;

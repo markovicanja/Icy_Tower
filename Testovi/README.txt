@@ -1,0 +1,1 @@
+Folder sa semama koje testiraju pojedine delove projekta

@@ -18,53 +18,40 @@ programming logic devices manufactured by Altera and sold by
 Altera or its authorized distributors.  Please refer to the 
 applicable agreement for further details.
 */
-(header "symbol" (version "1.1"))
+(header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 200 128)
-	(text "SUBX" (rect 5 0 29 12)(font "Arial" ))
-	(text "inst" (rect 8 96 20 108)(font "Arial" ))
+	(rect 16 16 176 112)
+	(text "SUB10" (rect 5 0 43 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "A[size-1..0]" (rect 0 0 43 12)(font "Arial" ))
-		(text "A[size-1..0]" (rect 21 27 64 39)(font "Arial" ))
+		(text "X[9..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "X[9..0]" (rect 21 27 57 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "B[size-1..0]" (rect 0 0 41 12)(font "Arial" ))
-		(text "B[size-1..0]" (rect 21 43 62 55)(font "Arial" ))
+		(text "Y[9..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "Y[9..0]" (rect 21 43 58 57)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
-		(pt 0 64)
-		(input)
-		(text "Cin" (rect 0 0 12 12)(font "Arial" ))
-		(text "Cin" (rect 21 59 33 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
+		(pt 160 32)
+		(output)
+		(text "Razlika[9..0]" (rect 0 0 68 14)(font "Arial" (font_size 8)))
+		(text "Razlika[9..0]" (rect 71 27 139 41)(font "Arial" (font_size 8)))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
 	)
 	(port
-		(pt 184 32)
+		(pt 160 48)
 		(output)
-		(text "F[size-1..0]" (rect 0 0 41 12)(font "Arial" ))
-		(text "F[size-1..0]" (rect 122 27 163 39)(font "Arial" ))
-		(line (pt 184 32)(pt 168 32)(line_width 3))
+		(text "Cout" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "Cout" (rect 114 43 139 57)(font "Arial" (font_size 8)))
+		(line (pt 160 48)(pt 144 48))
 	)
-	(port
-		(pt 184 48)
-		(output)
-		(text "Cout" (rect 0 0 18 12)(font "Arial" ))
-		(text "Cout" (rect 145 43 163 55)(font "Arial" ))
-		(line (pt 184 48)(pt 168 48)(line_width 1))
-	)
-	(parameter
-		"size"
-		"16"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
-		(rectangle (rect 16 16 168 96)(line_width 1))
+		(rectangle (rect 16 16 144 80))
 	)
-	(annotation_block (parameter)(rect 200 -64 300 16))
 )

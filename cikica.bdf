@@ -88,7 +88,7 @@ applicable agreement for further details.
 	(input)
 	(rect 160 264 328 280)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "NA_PLOCICI" (rect 5 0 72 12)(font "Arial" ))
+	(text "NA_PLOCICI" (rect 5 0 71 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -104,7 +104,7 @@ applicable agreement for further details.
 	(input)
 	(rect 152 328 320 344)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "LEVO" (rect 5 0 34 12)(font "Arial" ))
+	(text "LEVO" (rect 5 0 33 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -118,9 +118,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 144 352 312 368)
+	(rect 152 360 320 376)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "DESNO" (rect 5 0 44 12)(font "Arial" ))
+	(text "DESNO" (rect 5 0 43 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -1440,39 +1440,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -8 720 56 768)
-	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
-	(text "inst39" (rect 3 37 32 49)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(line (pt 0 32)(pt 15 32))
-	)
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 15 16))
-	)
-	(port
-		(pt 64 24)
-		(output)
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(line (pt 48 24)(pt 64 24))
-	)
-	(drawing
-		(line (pt 14 36)(pt 25 36))
-		(line (pt 14 13)(pt 25 13))
-		(arc (pt 7 29)(pt 7 19)(rect -14 8 19 41))
-		(arc (pt 49 24)(pt 25 13)(rect -6 13 57 76))
-		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36))
-	)
-)
-(symbol
 	(rect -184 816 -152 848)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "inst40" (rect 3 21 32 33)(font "Arial" )(invisible))
@@ -2205,47 +2172,12 @@ applicable agreement for further details.
 	(pt 1104 632)
 )
 (connector
-	(text "skok_eq0" (rect 40 800 87 812)(font "Arial" ))
-	(pt 128 816)
-	(pt 32 816)
-)
-(connector
-	(pt 128 816)
-	(pt 128 768)
-)
-(connector
 	(pt 24 704)
 	(pt 160 704)
 )
 (connector
-	(pt 160 768)
-	(pt 160 720)
-)
-(connector
-	(pt 128 768)
-	(pt 160 768)
-)
-(connector
 	(pt 160 712)
 	(pt 96 712)
-)
-(connector
-	(pt 96 712)
-	(pt 96 744)
-)
-(connector
-	(pt 96 744)
-	(pt 56 744)
-)
-(connector
-	(text "NA_PLOCICI" (rect -83 720 -17 732)(font "Arial" ))
-	(pt -80 736)
-	(pt -8 736)
-)
-(connector
-	(text "0" (rect -58 736 -53 748)(font "Arial" ))
-	(pt -80 752)
-	(pt -8 752)
 )
 (connector
 	(text "0" (rect -184 795 -172 800)(font "Arial" )(vertical))
@@ -2322,6 +2254,28 @@ applicable agreement for further details.
 	(text "idiL" (rect 1687 624 1703 636)(font "Arial" ))
 	(pt 1664 640)
 	(pt 1712 640)
+)
+(connector
+	(pt 96 712)
+	(pt 96 736)
+)
+(connector
+	(text "NA_PLOCICI" (rect -11 720 55 732)(font "Arial" ))
+	(pt 96 736)
+	(pt -8 736)
+)
+(connector
+	(pt 160 720)
+	(pt 112 720)
+)
+(connector
+	(pt 112 720)
+	(pt 112 768)
+)
+(connector
+	(text "skok_eq0" (rect 24 752 71 764)(font "Arial" ))
+	(pt 16 768)
+	(pt 112 768)
 )
 (junction (pt 408 464))
 (junction (pt -272 472))

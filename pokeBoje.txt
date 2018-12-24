@@ -1,0 +1,12 @@
+crna 0
+bela 4095
+
+narandzasta 3936
+crvena 3840
+zuta 4080
+
+plava (narandzasta) 07f 127
+tamno plava (crvena) 03f 63
+svetlo plava (zuta) obf 191
+
+

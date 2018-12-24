@@ -3303,7 +3303,7 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "usporeni" (rect -304 1016 -263 1028)(font "Arial" ))
+	(text "usporeni" (rect -312 1016 -271 1028)(font "Arial" ))
 	(pt -272 1032)
 	(pt -328 1032)
 )

@@ -1436,7 +1436,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 592 256 656 304)
+	(rect 656 0 720 48)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst42" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -1468,7 +1468,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 592 344 656 392)
+	(rect 656 88 720 136)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst43" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -2165,6 +2165,70 @@ applicable agreement for further details.
 		(arc (pt 31 36)(pt 31 12)(rect 19 12 44 37))
 	)
 )
+(symbol
+	(rect 656 8 720 56)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst46" (rect 3 37 32 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 37)(pt 31 37))
+		(line (pt 14 12)(pt 14 37))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
+)
+(symbol
+	(rect 656 96 720 144)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst47" (rect 3 37 32 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 37)(pt 31 37))
+		(line (pt 14 12)(pt 14 37))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
+)
 (connector
 	(text "CLK" (rect -608 456 -587 468)(font "Arial" ))
 	(pt -560 472)
@@ -2623,36 +2687,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "LEVO" (rect 564 256 592 268)(font "Arial" ))
-	(pt 536 272)
-	(pt 592 272)
-)
-(connector
-	(text "DESNO" (rect 553 344 591 356)(font "Arial" ))
-	(pt 544 360)
-	(pt 592 360)
-)
-(connector
-	(text "idiL" (rect 680 264 696 276)(font "Arial" ))
-	(pt 656 280)
-	(pt 712 280)
-)
-(connector
-	(text "clk2ms" (rect 540 272 575 284)(font "Arial" ))
-	(pt 480 288)
-	(pt 592 288)
-)
-(connector
-	(text "idiD" (rect 673 352 691 364)(font "Arial" ))
-	(pt 712 368)
-	(pt 656 368)
-)
-(connector
-	(text "clk2ms" (rect 553 360 588 372)(font "Arial" ))
-	(pt 592 376)
-	(pt 480 376)
-)
-(connector
 	(pt 616 1216)
 	(pt 616 1192)
 )
@@ -2953,6 +2987,66 @@ applicable agreement for further details.
 	(text "XLN[10]" (rect 2037 -224 2075 -212)(font "Arial" ))
 	(pt 2104 -208)
 	(pt 2032 -208)
+)
+(connector
+	(text "LEVO" (rect 628 0 656 12)(font "Arial" ))
+	(pt 600 16)
+	(pt 656 16)
+)
+(connector
+	(text "DESNO" (rect 617 88 655 100)(font "Arial" ))
+	(pt 608 104)
+	(pt 656 104)
+)
+(connector
+	(text "idiL" (rect 744 8 760 20)(font "Arial" ))
+	(pt 720 24)
+	(pt 776 24)
+)
+(connector
+	(text "clk2ms" (rect 604 16 639 28)(font "Arial" ))
+	(pt 544 32)
+	(pt 656 32)
+)
+(connector
+	(text "idiD" (rect 737 96 755 108)(font "Arial" ))
+	(pt 776 112)
+	(pt 720 112)
+)
+(connector
+	(text "clk2ms" (rect 617 104 652 116)(font "Arial" ))
+	(pt 656 120)
+	(pt 544 120)
+)
+(connector
+	(text "LEVO" (rect 628 8 656 20)(font "Arial" ))
+	(pt 600 24)
+	(pt 656 24)
+)
+(connector
+	(text "DESNO" (rect 617 96 655 108)(font "Arial" ))
+	(pt 608 112)
+	(pt 656 112)
+)
+(connector
+	(text "idiL" (rect 744 16 760 28)(font "Arial" ))
+	(pt 720 32)
+	(pt 776 32)
+)
+(connector
+	(text "clk2ms" (rect 604 24 639 36)(font "Arial" ))
+	(pt 544 40)
+	(pt 656 40)
+)
+(connector
+	(text "idiD" (rect 737 104 755 116)(font "Arial" ))
+	(pt 776 120)
+	(pt 720 120)
+)
+(connector
+	(text "clk2ms" (rect 617 112 652 124)(font "Arial" ))
+	(pt 656 128)
+	(pt 544 128)
 )
 (junction (pt -384 472))
 (junction (pt -384 632))

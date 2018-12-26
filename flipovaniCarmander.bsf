@@ -20,8 +20,8 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 136 208)
-	(text "zutiPokeStomak" (rect 5 0 93 14)(font "Arial" (font_size 8)))
+	(rect 16 16 176 208)
+	(text "flipovaniCarmander" (rect 5 0 114 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 176 25 188)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -87,13 +87,20 @@ applicable agreement for further details.
 		(line (pt 0 160)(pt 16 160))
 	)
 	(port
-		(pt 120 32)
+		(pt 160 32)
+		(output)
+		(text "RGB[11..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "RGB[11..0]" (rect 78 27 139 41)(font "Arial" (font_size 8)))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
+	)
+	(port
+		(pt 160 48)
 		(output)
 		(text "valid" (rect 0 0 25 14)(font "Arial" (font_size 8)))
-		(text "valid" (rect 74 27 99 41)(font "Arial" (font_size 8)))
-		(line (pt 120 32)(pt 104 32))
+		(text "valid" (rect 114 43 139 57)(font "Arial" (font_size 8)))
+		(line (pt 160 48)(pt 144 48))
 	)
 	(drawing
-		(rectangle (rect 16 16 104 176))
+		(rectangle (rect 16 16 144 176))
 	)
 )

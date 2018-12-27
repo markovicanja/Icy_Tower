@@ -1423,12 +1423,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "zutaBoja[11..0]" (rect 1547 -328 1620 -316)(font "Arial" ))
-	(pt 1600 -312)
-	(pt 1520 -312)
-	(bus)
-)
-(connector
 	(text "belaBoja[11..0]" (rect 1546 -224 1619 -212)(font "Arial" ))
 	(pt 1520 -208)
 	(pt 1600 -208)
@@ -1994,12 +1988,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "narandzastaBoja[11..0]" (rect 1170 -104 1282 -92)(font "Arial" ))
-	(pt 1152 -88)
-	(pt 1216 -88)
-	(bus)
-)
-(connector
 	(text "move" (rect 608 192 636 204)(font "Arial" ))
 	(pt 816 208)
 	(pt 600 208)
@@ -2028,6 +2016,18 @@ applicable agreement for further details.
 	(text "move" (rect 648 1448 676 1460)(font "Arial" ))
 	(pt 840 1464)
 	(pt 640 1464)
+)
+(connector
+	(text "zutaBoja[11..0]" (rect 1547 -328 1620 -316)(font "Arial" ))
+	(pt 1600 -312)
+	(pt 1520 -312)
+	(bus)
+)
+(connector
+	(text "narandzastaBoja[11..0]" (rect 1170 -104 1282 -92)(font "Arial" ))
+	(pt 1152 -88)
+	(pt 1216 -88)
+	(bus)
 )
 (junction (pt 752 160))
 (junction (pt 728 176))

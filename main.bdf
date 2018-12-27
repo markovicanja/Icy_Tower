@@ -40,7 +40,7 @@ applicable agreement for further details.
 	(input)
 	(rect -344 544 -176 560)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "BTN_SEED" (rect 5 0 62 12)(font "Arial" ))
+	(text "BTN_SEED" (rect 5 0 61 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -51,6 +51,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -392 560 -344 576))
 )
 (pin
 	(output)
@@ -88,7 +89,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1928 136 2104 152)
+	(rect 2208 152 2384 168)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "RGB[11..0]" (rect 90 0 145 12)(font "Arial" ))
 	(pt 0 8)
@@ -101,7 +102,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 2104 136 2160 152))
+	(annotation_block (location)(rect 2384 152 2440 168))
 )
 (pin
 	(bidir)
@@ -401,7 +402,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1856 120 1920 168)
+	(rect 2136 136 2200 184)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst7" (rect 3 37 26 49)(font "Arial" ))
 	(port
@@ -716,6 +717,157 @@ applicable agreement for further details.
 		(circle (rect 31 12 39 20))
 	)
 )
+(symbol
+	(rect 696 608 848 704)
+	(text "Podloga" (rect 5 0 49 14)(font "Arial" (font_size 8)))
+	(text "inst10" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "X[9..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "X[9..0]" (rect 21 27 57 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "RGB[11..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "RGB[11..0]" (rect 70 27 131 41)(font "Arial" (font_size 8)))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(port
+		(pt 152 48)
+		(output)
+		(text "valid" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "valid" (rect 106 43 131 57)(font "Arial" (font_size 8)))
+		(line (pt 152 48)(pt 136 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 80))
+	)
+)
+(symbol
+	(rect 1600 88 1704 184)
+	(text "MP2X" (rect 5 0 32 12)(font "Arial" ))
+	(text "inst13" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 48 96)
+		(input)
+		(text "S" (rect 0 -16 7 -4)(font "Arial" ))
+		(text "S" (rect 48 63 55 75)(font "Arial" ))
+		(line (pt 48 96)(pt 48 80))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "X0[size-1..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "X0" (rect 21 27 32 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "X1[size-1..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "X1" (rect 21 59 32 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 104 48)
+		(output)
+		(text "Y[size-1..0]" (rect -88 0 -32 12)(font "Arial" ))
+		(text "Y" (rect 76 43 84 55)(font "Arial" ))
+		(line (pt 104 48)(pt 88 48)(line_width 3))
+	)
+	(parameter
+		"size"
+		"12"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(text " MX" (rect 40 40 63 54)(font "Arial" (color 0 0 0)(font_size 8)(bold)))
+		(rectangle (rect 16 16 88 80))
+	)
+	(annotation_block (parameter)(rect 1704 56 1886 84))
+)
+(symbol
+	(rect 1872 104 1976 200)
+	(text "MP2X" (rect 5 0 32 12)(font "Arial" ))
+	(text "inst14" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 48 96)
+		(input)
+		(text "S" (rect 0 -16 7 -4)(font "Arial" ))
+		(text "S" (rect 48 63 55 75)(font "Arial" ))
+		(line (pt 48 96)(pt 48 80))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "X0[size-1..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "X0" (rect 21 27 32 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "X1[size-1..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "X1" (rect 21 59 32 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 104 48)
+		(output)
+		(text "Y[size-1..0]" (rect -88 0 -32 12)(font "Arial" ))
+		(text "Y" (rect 76 43 84 55)(font "Arial" ))
+		(line (pt 104 48)(pt 88 48)(line_width 3))
+	)
+	(parameter
+		"size"
+		"12"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(text " MX" (rect 40 40 63 54)(font "Arial" (color 0 0 0)(font_size 8)(bold)))
+		(rectangle (rect 16 16 88 80))
+	)
+	(annotation_block (parameter)(rect 1976 72 2158 100))
+)
+(symbol
+	(rect 704 728 856 824)
+	(text "Zidovi" (rect 5 0 39 14)(font "Arial" (font_size 8)))
+	(text "inst11" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "X[9..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "X[9..0]" (rect 21 27 57 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Y[9..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "Y[9..0]" (rect 21 43 58 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "RGB[11..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "RGB[11..0]" (rect 70 27 131 41)(font "Arial" (font_size 8)))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(port
+		(pt 152 48)
+		(output)
+		(text "valid" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "valid" (rect 106 43 131 57)(font "Arial" (font_size 8)))
+		(line (pt 152 48)(pt 136 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 80))
+	)
+)
 (connector
 	(pt 416 216)
 	(pt 424 216)
@@ -785,34 +937,9 @@ applicable agreement for further details.
 	(pt 88 128)
 )
 (connector
-	(text "de" (rect 1800 136 1811 148)(font "Arial" ))
-	(pt 1856 152)
-	(pt 1792 152)
-)
-(connector
-	(pt 1928 144)
-	(pt 1920 144)
-	(bus)
-)
-(connector
 	(text "pozadinaBoja[11..0]" (rect 1099 72 1194 84)(font "Arial" ))
 	(pt 1088 88)
 	(pt 1192 88)
-	(bus)
-)
-(connector
-	(pt 1480 120)
-	(pt 1560 120)
-	(bus)
-)
-(connector
-	(pt 1560 136)
-	(pt 1856 136)
-	(bus)
-)
-(connector
-	(pt 1560 136)
-	(pt 1560 120)
 	(bus)
 )
 (connector
@@ -913,18 +1040,8 @@ applicable agreement for further details.
 	(pt 496 408)
 )
 (connector
-	(pt 632 152)
-	(pt 632 424)
-	(bus)
-)
-(connector
 	(pt 632 424)
 	(pt 688 424)
-	(bus)
-)
-(connector
-	(pt 616 168)
-	(pt 616 440)
 	(bus)
 )
 (connector
@@ -1002,7 +1119,127 @@ applicable agreement for further details.
 	(pt 744 216)
 	(pt 688 216)
 )
+(connector
+	(pt 632 152)
+	(pt 632 424)
+	(bus)
+)
+(connector
+	(pt 632 640)
+	(pt 696 640)
+	(bus)
+)
+(connector
+	(text "podloga" (rect 855 640 892 652)(font "Arial" ))
+	(pt 848 656)
+	(pt 928 656)
+)
+(connector
+	(pt 1480 120)
+	(pt 1600 120)
+	(bus)
+)
+(connector
+	(text "bojaPodloge[11..0]" (rect 1503 136 1593 148)(font "Arial" ))
+	(pt 1600 152)
+	(pt 1496 152)
+	(bus)
+)
+(connector
+	(text "bojaPodloge[11..0]" (rect 855 624 945 636)(font "Arial" ))
+	(pt 848 640)
+	(pt 928 640)
+	(bus)
+)
+(connector
+	(pt 1648 184)
+	(pt 1648 208)
+)
+(connector
+	(text "podloga" (rect 1569 192 1606 204)(font "Arial" ))
+	(pt 1648 208)
+	(pt 1552 208)
+)
+(connector
+	(pt 704 760)
+	(pt 632 760)
+	(bus)
+)
+(connector
+	(pt 632 424)
+	(pt 632 640)
+	(bus)
+)
+(connector
+	(pt 632 640)
+	(pt 632 760)
+	(bus)
+)
+(connector
+	(pt 704 776)
+	(pt 616 776)
+	(bus)
+)
+(connector
+	(pt 616 168)
+	(pt 616 440)
+	(bus)
+)
+(connector
+	(pt 616 440)
+	(pt 616 776)
+	(bus)
+)
+(connector
+	(pt 1872 136)
+	(pt 1704 136)
+	(bus)
+)
+(connector
+	(text "bojaZida[11..0]" (rect 1765 152 1838 164)(font "Arial" ))
+	(pt 1872 168)
+	(pt 1752 168)
+	(bus)
+)
+(connector
+	(pt 1920 200)
+	(pt 1920 232)
+)
+(connector
+	(text "zid" (rect 1844 216 1856 228)(font "Arial" ))
+	(pt 1920 232)
+	(pt 1832 232)
+)
+(connector
+	(pt 2208 160)
+	(pt 2200 160)
+	(bus)
+)
+(connector
+	(text "de" (rect 2080 152 2091 164)(font "Arial" ))
+	(pt 2072 168)
+	(pt 2136 168)
+)
+(connector
+	(pt 1976 152)
+	(pt 2136 152)
+	(bus)
+)
+(connector
+	(text "bojaZida[11..0]" (rect 862 744 935 756)(font "Arial" ))
+	(pt 856 760)
+	(pt 928 760)
+	(bus)
+)
+(connector
+	(text "zid" (rect 869 760 881 772)(font "Arial" ))
+	(pt 856 776)
+	(pt 928 776)
+)
 (junction (pt 632 152))
 (junction (pt 616 168))
+(junction (pt 632 424))
+(junction (pt 632 640))
+(junction (pt 616 440))
 (text "vx < 0 kad ide levo" (rect -280 240 -174 254)(font "Arial" (font_size 8)))
 (text "vy < 0 kad ide dole" (rect -280 256 -174 270)(font "Arial" (font_size 8)))

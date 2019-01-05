@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 224 288 392 304)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 5 0 27 12)(font "Arial" ))
+	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -152,6 +152,22 @@ applicable agreement for further details.
 	(rect 1768 720 1944 736)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "down" (rect 90 0 114 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1768 760 1948 776)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "mouse_data_new" (rect 90 0 174 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -866,6 +882,56 @@ applicable agreement for further details.
 		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
 	)
 )
+(symbol
+	(rect 1592 744 1656 824)
+	(text "DFF" (rect 1 0 19 10)(font "Arial" (font_size 6)))
+	(text "inst6" (rect 3 68 26 80)(font "Arial" ))
+	(port
+		(pt 32 80)
+		(input)
+		(text "CLRN" (rect 21 59 44 71)(font "Courier New" (bold)))
+		(text "CLRN" (rect 21 58 44 70)(font "Courier New" (bold)))
+		(line (pt 32 80)(pt 32 76))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "CLK" (rect 3 29 20 41)(font "Courier New" (bold))(invisible))
+		(text "CLK" (rect 3 29 20 41)(font "Courier New" (bold))(invisible))
+		(line (pt 0 40)(pt 12 40))
+	)
+	(port
+		(pt 0 24)
+		(input)
+		(text "D" (rect 14 20 19 32)(font "Courier New" (bold)))
+		(text "D" (rect 14 20 19 32)(font "Courier New" (bold)))
+		(line (pt 0 24)(pt 12 24))
+	)
+	(port
+		(pt 32 0)
+		(input)
+		(text "PRN" (rect 24 13 41 25)(font "Courier New" (bold)))
+		(text "PRN" (rect 24 11 41 23)(font "Courier New" (bold)))
+		(line (pt 32 4)(pt 32 0))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "Q" (rect 45 20 50 32)(font "Courier New" (bold)))
+		(text "Q" (rect 43 20 48 32)(font "Courier New" (bold)))
+		(line (pt 52 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 12 12)(pt 52 12))
+		(line (pt 12 68)(pt 52 68))
+		(line (pt 52 68)(pt 52 12))
+		(line (pt 12 68)(pt 12 12))
+		(line (pt 19 40)(pt 12 47))
+		(line (pt 12 32)(pt 20 40))
+		(circle (rect 28 4 36 12))
+		(circle (rect 28 68 36 76))
+	)
+)
 (connector
 	(text "CLK" (rect 1128 536 1149 548)(font "Arial" ))
 	(pt 1168 552)
@@ -902,11 +968,6 @@ applicable agreement for further details.
 	(text "CLK" (rect 727 552 748 564)(font "Arial" ))
 	(pt 752 568)
 	(pt 704 568)
-)
-(connector
-	(text "mouse_data_new" (rect 664 568 748 580)(font "Arial" ))
-	(pt 752 584)
-	(pt 704 584)
 )
 (connector
 	(pt 920 568)
@@ -984,11 +1045,6 @@ applicable agreement for further details.
 	(pt 560 304)
 )
 (connector
-	(text "mouse_data_new" (rect 808 288 892 300)(font "Arial" ))
-	(pt 800 304)
-	(pt 880 304)
-)
-(connector
 	(pt 1280 528)
 	(pt 1280 320)
 	(bus)
@@ -1006,10 +1062,6 @@ applicable agreement for further details.
 (connector
 	(pt 800 352)
 	(pt 824 352)
-)
-(connector
-	(pt 848 568)
-	(pt 920 568)
 )
 (connector
 	(pt 920 568)
@@ -1170,6 +1222,35 @@ applicable agreement for further details.
 	(text "DOLE" (rect 1704 712 1733 724)(font "Arial" ))
 	(pt 1768 728)
 	(pt 1696 728)
+)
+(connector
+	(text "X" (rect 874 552 879 564)(font "Arial" ))
+	(pt 848 568)
+	(pt 920 568)
+)
+(connector
+	(text "X" (rect 1552 752 1557 764)(font "Arial" ))
+	(pt 1592 768)
+	(pt 1544 768)
+)
+(connector
+	(text "CLK" (rect 1552 768 1573 780)(font "Arial" ))
+	(pt 1592 784)
+	(pt 1544 784)
+)
+(connector
+	(pt 1656 768)
+	(pt 1768 768)
+)
+(connector
+	(text "mouse_data_cap" (rect 808 288 891 300)(font "Arial" ))
+	(pt 800 304)
+	(pt 880 304)
+)
+(connector
+	(text "mouse_data_cap" (rect 664 568 747 580)(font "Arial" ))
+	(pt 752 584)
+	(pt 704 584)
 )
 (junction (pt 920 568))
 (junction (pt 1280 1104))

@@ -168,6 +168,22 @@ applicable agreement for further details.
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
+	(input)
+	(rect 184 80 352 96)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "reset" (rect 5 0 30 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
 	(rect 3000 256 3176 272)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -854,9 +870,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 816 48 936 240)
+	(rect 816 48 936 272)
 	(text "crniPokeBlok2" (rect 5 0 84 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(text "inst" (rect 8 208 25 220)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -921,6 +937,13 @@ applicable agreement for further details.
 		(line (pt 0 160)(pt 16 160))
 	)
 	(port
+		(pt 0 176)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 171 50 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
 		(pt 120 32)
 		(output)
 		(text "valid" (rect 0 0 25 14)(font "Arial" (font_size 8)))
@@ -928,13 +951,13 @@ applicable agreement for further details.
 		(line (pt 120 32)(pt 104 32))
 	)
 	(drawing
-		(rectangle (rect 16 16 104 176))
+		(rectangle (rect 16 16 104 208))
 	)
 )
 (symbol
-	(rect 832 328 952 520)
+	(rect 832 328 952 552)
 	(text "narandzastiPokeBlok2" (rect 5 0 130 14)(font "Arial" (font_size 8)))
-	(text "inst1" (rect 8 176 31 188)(font "Arial" ))
+	(text "inst1" (rect 8 208 31 220)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -999,6 +1022,13 @@ applicable agreement for further details.
 		(line (pt 0 160)(pt 16 160))
 	)
 	(port
+		(pt 0 176)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 171 50 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
 		(pt 120 32)
 		(output)
 		(text "valid" (rect 0 0 25 14)(font "Arial" (font_size 8)))
@@ -1006,13 +1036,13 @@ applicable agreement for further details.
 		(line (pt 120 32)(pt 104 32))
 	)
 	(drawing
-		(rectangle (rect 16 16 104 176))
+		(rectangle (rect 16 16 104 208))
 	)
 )
 (symbol
-	(rect 840 576 960 768)
+	(rect 840 576 960 800)
 	(text "zutiPokeRep2" (rect 5 0 81 14)(font "Arial" (font_size 8)))
-	(text "inst2" (rect 8 176 31 188)(font "Arial" ))
+	(text "inst2" (rect 8 208 31 220)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1077,6 +1107,13 @@ applicable agreement for further details.
 		(line (pt 0 160)(pt 16 160))
 	)
 	(port
+		(pt 0 176)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 171 50 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
 		(pt 120 32)
 		(output)
 		(text "valid" (rect 0 0 25 14)(font "Arial" (font_size 8)))
@@ -1084,13 +1121,13 @@ applicable agreement for further details.
 		(line (pt 120 32)(pt 104 32))
 	)
 	(drawing
-		(rectangle (rect 16 16 104 176))
+		(rectangle (rect 16 16 104 208))
 	)
 )
 (symbol
-	(rect 840 824 960 1016)
+	(rect 840 824 960 1048)
 	(text "crveniPokeBlok2" (rect 5 0 98 14)(font "Arial" (font_size 8)))
-	(text "inst6" (rect 8 176 31 188)(font "Arial" ))
+	(text "inst6" (rect 8 208 31 220)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1155,6 +1192,13 @@ applicable agreement for further details.
 		(line (pt 0 160)(pt 16 160))
 	)
 	(port
+		(pt 0 176)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 171 50 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
 		(pt 120 32)
 		(output)
 		(text "valid" (rect 0 0 25 14)(font "Arial" (font_size 8)))
@@ -1162,13 +1206,13 @@ applicable agreement for further details.
 		(line (pt 120 32)(pt 104 32))
 	)
 	(drawing
-		(rectangle (rect 16 16 104 176))
+		(rectangle (rect 16 16 104 208))
 	)
 )
 (symbol
-	(rect 840 1064 960 1256)
+	(rect 840 1064 960 1288)
 	(text "beliPokeBlok2" (rect 5 0 81 14)(font "Arial" (font_size 8)))
-	(text "inst7" (rect 8 176 31 188)(font "Arial" ))
+	(text "inst7" (rect 8 208 31 220)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1233,6 +1277,13 @@ applicable agreement for further details.
 		(line (pt 0 160)(pt 16 160))
 	)
 	(port
+		(pt 0 176)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 171 50 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
 		(pt 120 32)
 		(output)
 		(text "valid" (rect 0 0 25 14)(font "Arial" (font_size 8)))
@@ -1240,13 +1291,13 @@ applicable agreement for further details.
 		(line (pt 120 32)(pt 104 32))
 	)
 	(drawing
-		(rectangle (rect 16 16 104 176))
+		(rectangle (rect 16 16 104 208))
 	)
 )
 (symbol
-	(rect 840 1304 960 1496)
+	(rect 840 1304 960 1528)
 	(text "zutiPokeStomak2" (rect 5 0 100 14)(font "Arial" (font_size 8)))
-	(text "inst13" (rect 8 176 37 188)(font "Arial" ))
+	(text "inst13" (rect 8 208 37 220)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1311,6 +1362,13 @@ applicable agreement for further details.
 		(line (pt 0 160)(pt 16 160))
 	)
 	(port
+		(pt 0 176)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 171 50 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
 		(pt 120 32)
 		(output)
 		(text "valid" (rect 0 0 25 14)(font "Arial" (font_size 8)))
@@ -1318,7 +1376,7 @@ applicable agreement for further details.
 		(line (pt 120 32)(pt 104 32))
 	)
 	(drawing
-		(rectangle (rect 16 16 104 176))
+		(rectangle (rect 16 16 104 208))
 	)
 )
 (connector
@@ -2031,6 +2089,36 @@ applicable agreement for further details.
 	(pt 728 1192)
 	(pt 728 1432)
 	(bus)
+)
+(connector
+	(text "reset" (rect 784 208 808 220)(font "Arial" ))
+	(pt 776 224)
+	(pt 816 224)
+)
+(connector
+	(text "reset" (rect 800 488 824 500)(font "Arial" ))
+	(pt 792 504)
+	(pt 832 504)
+)
+(connector
+	(text "reset" (rect 808 736 832 748)(font "Arial" ))
+	(pt 800 752)
+	(pt 840 752)
+)
+(connector
+	(text "reset" (rect 808 984 832 996)(font "Arial" ))
+	(pt 800 1000)
+	(pt 840 1000)
+)
+(connector
+	(text "reset" (rect 808 1224 832 1236)(font "Arial" ))
+	(pt 800 1240)
+	(pt 840 1240)
+)
+(connector
+	(text "reset" (rect 808 1464 832 1476)(font "Arial" ))
+	(pt 800 1480)
+	(pt 840 1480)
 )
 (junction (pt 752 160))
 (junction (pt 728 176))

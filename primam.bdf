@@ -133,35 +133,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 544 120 640 216)
-	(text "Debouncer" (rect 5 0 67 14)(font "Arial" (font_size 8)))
-	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "IN" (rect 0 0 10 14)(font "Arial" (font_size 8)))
-		(text "IN" (rect 21 27 31 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "OUT" (rect 0 0 24 14)(font "Arial" (font_size 8)))
-		(text "OUT" (rect 51 27 75 41)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
 	(rect 752 256 984 336)
 	(text "REGX" (rect 5 0 34 12)(font "Arial" ))
 	(text "inst1" (rect 8 64 31 76)(font "Arial" ))
@@ -716,6 +687,64 @@ applicable agreement for further details.
 		(line (pt 8 8)(pt 24 8))
 	)
 )
+(symbol
+	(rect 368 320 464 416)
+	(text "Debouncer" (rect 5 0 67 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN" (rect 0 0 10 14)(font "Arial" (font_size 8)))
+		(text "IN" (rect 21 27 31 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "OUT" (rect 0 0 24 14)(font "Arial" (font_size 8)))
+		(text "OUT" (rect 51 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 544 120 640 216)
+	(text "Debouncer" (rect 5 0 67 14)(font "Arial" (font_size 8)))
+	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN" (rect 0 0 10 14)(font "Arial" (font_size 8)))
+		(text "IN" (rect 21 27 31 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "OUT" (rect 0 0 24 14)(font "Arial" (font_size 8)))
+		(text "OUT" (rect 51 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
 (connector
 	(text "sestitakt" (rect 696 280 738 292)(font "Arial" ))
 	(pt 752 296)
@@ -771,11 +800,6 @@ applicable agreement for further details.
 	(text "clear14" (rect 704 896 739 908)(font "Arial" ))
 	(pt 752 912)
 	(pt 704 912)
-)
-(connector
-	(text "debdata" (rect 648 136 686 148)(font "Arial" ))
-	(pt 640 152)
-	(pt 688 152)
 )
 (connector
 	(pt 176 656)
@@ -959,16 +983,30 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "debcap" (rect 457 336 492 348)(font "Arial" ))
-	(pt 216 352)
-	(pt 472 352)
-)
-(connector
 	(text "clk" (rect 480 152 494 164)(font "Arial" ))
 	(pt 472 168)
 	(pt 544 168)
 )
 (connector
-	(pt 400 152)
+	(pt 216 352)
+	(pt 368 352)
+)
+(connector
+	(text "debcap" (rect 481 336 516 348)(font "Arial" ))
+	(pt 464 352)
+	(pt 496 352)
+)
+(connector
+	(text "clk" (rect 320 352 334 364)(font "Arial" ))
+	(pt 368 368)
+	(pt 312 368)
+)
+(connector
 	(pt 544 152)
+	(pt 400 152)
+)
+(connector
+	(text "debdata" (rect 680 136 718 148)(font "Arial" ))
+	(pt 640 152)
+	(pt 720 152)
 )

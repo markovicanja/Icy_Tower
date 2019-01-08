@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 232 240)
+	(rect 16 16 232 272)
 	(text "plocice" (rect 5 0 45 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 208 25 220)(font "Arial" ))
+	(text "inst" (rect 8 240 25 252)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -101,6 +101,13 @@ applicable agreement for further details.
 		(line (pt 0 192)(pt 16 192)(line_width 3))
 	)
 	(port
+		(pt 0 208)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 203 50 217)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 16 208))
+	)
+	(port
 		(pt 216 32)
 		(output)
 		(text "NA_PLOCICI" (rect 0 0 69 14)(font "Arial" (font_size 8)))
@@ -129,6 +136,6 @@ applicable agreement for further details.
 		(line (pt 216 80)(pt 200 80))
 	)
 	(drawing
-		(rectangle (rect 16 16 200 208))
+		(rectangle (rect 16 16 200 240))
 	)
 )

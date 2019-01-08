@@ -229,6 +229,22 @@ applicable agreement for further details.
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
+	(input)
+	(rect 56 400 224 416)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "reset" (rect 5 0 30 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
 	(rect 1496 224 1672 240)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -1104,7 +1120,7 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 1736 -336 1918 -308))
 )
 (symbol
-	(rect 608 -232 672 -184)
+	(rect 560 -352 624 -304)
 	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst24" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -1248,27 +1264,6 @@ applicable agreement for further details.
 	(pt 512 160)
 	(pt 424 160)
 	(bus)
-)
-(connector
-	(text "CLK" (rect -82 -192 -61 -180)(font "Arial" ))
-	(pt -40 -176)
-	(pt -96 -176)
-)
-(connector
-	(pt 72 -120)
-	(pt 72 -96)
-	(bus)
-)
-(connector
-	(text "begin" (rect 124 -112 149 -100)(font "Arial" ))
-	(pt 72 -96)
-	(pt 168 -96)
-	(bus)
-)
-(connector
-	(text "begin" (rect -85 -160 -60 -148)(font "Arial" ))
-	(pt -40 -144)
-	(pt -96 -144)
 )
 (connector
 	(pt 1112 24)
@@ -1424,17 +1419,6 @@ applicable agreement for further details.
 	(pt 1360 544)
 )
 (connector
-	(pt 512 -48)
-	(pt 512 -64)
-	(bus)
-)
-(connector
-	(text "YG[9..0]" (rect 435 -80 477 -68)(font "Arial" ))
-	(pt 512 -64)
-	(pt 424 -64)
-	(bus)
-)
-(connector
 	(text "XL[9..0]" (rect 891 -256 928 -244)(font "Arial" ))
 	(pt 976 -240)
 	(pt 864 -240)
@@ -1569,21 +1553,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "begin" (rect 552 -216 577 -204)(font "Arial" ))
-	(pt 608 -200)
-	(pt 552 -200)
-)
-(connector
-	(text "loadX" (rect 680 -224 705 -212)(font "Arial" ))
-	(pt 672 -208)
-	(pt 728 -208)
-)
-(connector
-	(text "move" (rect 554 -232 582 -220)(font "Arial" ))
-	(pt 608 -216)
-	(pt 552 -216)
-)
-(connector
 	(text "XDN[9..0]" (rect 1541 -288 1589 -276)(font "Arial" ))
 	(pt 1632 -272)
 	(pt 1528 -272)
@@ -1610,4 +1579,67 @@ applicable agreement for further details.
 	(text "1" (rect -200 411 -188 416)(font "Arial" )(vertical))
 	(pt -184 392)
 	(pt -184 432)
+)
+(connector
+	(text "begin" (rect 504 -336 529 -324)(font "Arial" ))
+	(pt 560 -320)
+	(pt 504 -320)
+)
+(connector
+	(text "loadX" (rect 632 -344 657 -332)(font "Arial" ))
+	(pt 624 -328)
+	(pt 680 -328)
+)
+(connector
+	(text "move" (rect 506 -352 534 -340)(font "Arial" ))
+	(pt 560 -336)
+	(pt 504 -336)
+)
+(connector
+	(pt 512 -48)
+	(pt 512 -72)
+	(bus)
+)
+(connector
+	(text "YG[9..0]" (rect 435 -88 477 -76)(font "Arial" ))
+	(pt 512 -72)
+	(pt 424 -72)
+	(bus)
+)
+(connector
+	(text "CLK" (rect -82 -192 -61 -180)(font "Arial" ))
+	(pt -40 -176)
+	(pt -96 -176)
+)
+(connector
+	(text "begin" (rect -85 -160 -60 -148)(font "Arial" ))
+	(pt -40 -144)
+	(pt -96 -144)
+)
+(connector
+	(pt 72 -224)
+	(pt 72 -200)
+	(bus)
+)
+(connector
+	(text "1" (rect 10 -240 15 -228)(font "Arial" ))
+	(pt -8 -224)
+	(pt 72 -224)
+	(bus)
+)
+(connector
+	(pt 72 -120)
+	(pt 72 -96)
+	(bus)
+)
+(connector
+	(text "begin" (rect 124 -112 149 -100)(font "Arial" ))
+	(pt 72 -96)
+	(pt 168 -96)
+	(bus)
+)
+(connector
+	(text "reset" (rect -83 -176 -59 -164)(font "Arial" ))
+	(pt -40 -160)
+	(pt -96 -160)
 )

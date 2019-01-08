@@ -165,6 +165,22 @@ applicable agreement for further details.
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
+	(input)
+	(rect 24 -56 192 -40)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "reset" (rect 5 0 30 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
 	(rect 864 -144 1040 -128)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -533,9 +549,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 392 152 520 408)
+	(rect 392 152 520 440)
 	(text "pokeBlok" (rect 5 0 55 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 240 25 252)(font "Arial" ))
+	(text "inst" (rect 8 272 25 284)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -628,6 +644,13 @@ applicable agreement for further details.
 		(line (pt 0 224)(pt 16 224))
 	)
 	(port
+		(pt 0 240)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 235 50 249)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 16 240))
+	)
+	(port
 		(pt 128 32)
 		(output)
 		(text "valid" (rect 0 0 25 14)(font "Arial" (font_size 8)))
@@ -635,13 +658,13 @@ applicable agreement for further details.
 		(line (pt 128 32)(pt 112 32))
 	)
 	(drawing
-		(rectangle (rect 16 16 112 240))
+		(rectangle (rect 16 16 112 272))
 	)
 )
 (symbol
-	(rect 392 424 520 680)
+	(rect 392 424 520 712)
 	(text "pokeBlok" (rect 5 0 55 14)(font "Arial" (font_size 8)))
-	(text "inst44" (rect 8 240 37 252)(font "Arial" ))
+	(text "inst44" (rect 8 272 37 284)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -734,6 +757,13 @@ applicable agreement for further details.
 		(line (pt 0 224)(pt 16 224))
 	)
 	(port
+		(pt 0 240)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 235 50 249)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 16 240))
+	)
+	(port
 		(pt 128 32)
 		(output)
 		(text "valid" (rect 0 0 25 14)(font "Arial" (font_size 8)))
@@ -741,13 +771,13 @@ applicable agreement for further details.
 		(line (pt 128 32)(pt 112 32))
 	)
 	(drawing
-		(rectangle (rect 16 16 112 240))
+		(rectangle (rect 16 16 112 272))
 	)
 )
 (symbol
-	(rect 408 696 536 952)
+	(rect 408 696 536 984)
 	(text "pokeBlok" (rect 5 0 55 14)(font "Arial" (font_size 8)))
-	(text "inst45" (rect 8 240 37 252)(font "Arial" ))
+	(text "inst45" (rect 8 272 37 284)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -840,6 +870,13 @@ applicable agreement for further details.
 		(line (pt 0 224)(pt 16 224))
 	)
 	(port
+		(pt 0 240)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 235 50 249)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 16 240))
+	)
+	(port
 		(pt 128 32)
 		(output)
 		(text "valid" (rect 0 0 25 14)(font "Arial" (font_size 8)))
@@ -847,7 +884,7 @@ applicable agreement for further details.
 		(line (pt 128 32)(pt 112 32))
 	)
 	(drawing
-		(rectangle (rect 16 16 112 240))
+		(rectangle (rect 16 16 112 272))
 	)
 )
 (connector
@@ -1193,4 +1230,19 @@ applicable agreement for further details.
 	(text "valid1" (rect 550 440 579 452)(font "Arial" ))
 	(pt 520 456)
 	(pt 600 456)
+)
+(connector
+	(text "reset" (rect 336 376 360 388)(font "Arial" ))
+	(pt 392 392)
+	(pt 328 392)
+)
+(connector
+	(text "reset" (rect 336 648 360 660)(font "Arial" ))
+	(pt 392 664)
+	(pt 328 664)
+)
+(connector
+	(text "reset" (rect 352 920 376 932)(font "Arial" ))
+	(pt 408 936)
+	(pt 344 936)
 )

@@ -674,64 +674,6 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 560 -1016 742 -974))
 )
 (symbol
-	(rect -64 -1336 88 -1248)
-	(text "CLK_DIVIDER" (rect 5 0 78 12)(font "Arial" ))
-	(text "inst58" (rect 24 72 53 84)(font "Arial" ))
-	(port
-		(pt 0 48)
-		(input)
-		(text "in_clk" (rect 0 0 28 12)(font "Arial" ))
-		(text "in_clk" (rect 21 43 49 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 32)
-		(input)
-		(text "reset" (rect 0 0 24 12)(font "Arial" ))
-		(text "reset" (rect 21 27 45 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-		(unused)
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "pause" (rect 0 0 29 12)(font "Arial" ))
-		(text "pause" (rect 21 59 50 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-		(unused)
-	)
-	(port
-		(pt 152 48)
-		(output)
-		(text "out_clk" (rect 0 0 35 12)(font "Arial" ))
-		(text "out_clk" (rect 102 43 137 55)(font "Arial" ))
-		(line (pt 152 48)(pt 136 48))
-	)
-	(parameter
-		"period_InMHz"
-		"50"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"period_OutMiliSec"
-		"2"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(line (pt 48 80)(pt 64 80)(color 0 0 0)(line_width 2))
-		(line (pt 64 64)(pt 80 64)(color 0 0 0)(line_width 2))
-		(line (pt 64 80)(pt 64 64)(color 0 0 0)(line_width 2))
-		(line (pt 80 80)(pt 96 80)(color 0 0 0)(line_width 2))
-		(line (pt 96 64)(pt 112 64)(color 0 0 0)(line_width 2))
-		(line (pt 96 80)(pt 96 64)(color 0 0 0)(line_width 2))
-		(line (pt 80 64)(pt 80 80)(color 0 0 0)(line_width 2))
-		(line (pt 112 64)(pt 112 80)(color 0 0 0)(line_width 2))
-		(line (pt 112 80)(pt 128 80)(color 0 0 0)(line_width 2))
-		(rectangle (rect 16 16 136 88))
-	)
-	(annotation_block (parameter)(rect 88 -1384 312 -1342))
-)
-(symbol
 	(rect 152 -1472 216 -1392)
 	(text "DFF" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst62" (rect 3 68 32 80)(font "Arial" ))
@@ -2621,64 +2563,6 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 1680 -1408 1862 -1366))
 )
 (symbol
-	(rect -64 -1496 88 -1408)
-	(text "CLK_DIVIDER" (rect 5 0 78 12)(font "Arial" ))
-	(text "inst65" (rect 24 72 53 84)(font "Arial" ))
-	(port
-		(pt 0 48)
-		(input)
-		(text "in_clk" (rect 0 0 28 12)(font "Arial" ))
-		(text "in_clk" (rect 21 43 49 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 32)
-		(input)
-		(text "reset" (rect 0 0 24 12)(font "Arial" ))
-		(text "reset" (rect 21 27 45 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-		(unused)
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "pause" (rect 0 0 29 12)(font "Arial" ))
-		(text "pause" (rect 21 59 50 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-		(unused)
-	)
-	(port
-		(pt 152 48)
-		(output)
-		(text "out_clk" (rect 0 0 35 12)(font "Arial" ))
-		(text "out_clk" (rect 102 43 137 55)(font "Arial" ))
-		(line (pt 152 48)(pt 136 48))
-	)
-	(parameter
-		"period_InMHz"
-		"50"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"period_OutMiliSec"
-		"6"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(line (pt 48 80)(pt 64 80)(color 0 0 0)(line_width 2))
-		(line (pt 64 64)(pt 80 64)(color 0 0 0)(line_width 2))
-		(line (pt 64 80)(pt 64 64)(color 0 0 0)(line_width 2))
-		(line (pt 80 80)(pt 96 80)(color 0 0 0)(line_width 2))
-		(line (pt 96 64)(pt 112 64)(color 0 0 0)(line_width 2))
-		(line (pt 96 80)(pt 96 64)(color 0 0 0)(line_width 2))
-		(line (pt 80 64)(pt 80 80)(color 0 0 0)(line_width 2))
-		(line (pt 112 64)(pt 112 80)(color 0 0 0)(line_width 2))
-		(line (pt 112 80)(pt 128 80)(color 0 0 0)(line_width 2))
-		(rectangle (rect 16 16 136 88))
-	)
-	(annotation_block (parameter)(rect 88 -1544 312 -1502))
-)
-(symbol
 	(rect 1232 -872 1384 -784)
 	(text "CLK_DIVIDER" (rect 5 0 78 12)(font "Arial" ))
 	(text "inst69" (rect 24 72 53 84)(font "Arial" ))
@@ -3583,6 +3467,122 @@ applicable agreement for further details.
 		(rectangle (rect 24 24 40 40)(fill (color 218 218 218)))
 	)
 	(annotation_block (parameter)(rect 2712 -1128 2894 -1086))
+)
+(symbol
+	(rect -64 -1496 88 -1408)
+	(text "CLK_DIVIDER" (rect 5 0 78 12)(font "Arial" ))
+	(text "inst65" (rect 24 72 53 84)(font "Arial" ))
+	(port
+		(pt 0 48)
+		(input)
+		(text "in_clk" (rect 0 0 28 12)(font "Arial" ))
+		(text "in_clk" (rect 21 43 49 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "reset" (rect 0 0 24 12)(font "Arial" ))
+		(text "reset" (rect 21 27 45 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+		(unused)
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pause" (rect 0 0 29 12)(font "Arial" ))
+		(text "pause" (rect 21 59 50 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+		(unused)
+	)
+	(port
+		(pt 152 48)
+		(output)
+		(text "out_clk" (rect 0 0 35 12)(font "Arial" ))
+		(text "out_clk" (rect 102 43 137 55)(font "Arial" ))
+		(line (pt 152 48)(pt 136 48))
+	)
+	(parameter
+		"period_InMHz"
+		"50"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"period_OutMiliSec"
+		"6"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(line (pt 48 80)(pt 64 80)(color 0 0 0)(line_width 2))
+		(line (pt 64 64)(pt 80 64)(color 0 0 0)(line_width 2))
+		(line (pt 64 80)(pt 64 64)(color 0 0 0)(line_width 2))
+		(line (pt 80 80)(pt 96 80)(color 0 0 0)(line_width 2))
+		(line (pt 96 64)(pt 112 64)(color 0 0 0)(line_width 2))
+		(line (pt 96 80)(pt 96 64)(color 0 0 0)(line_width 2))
+		(line (pt 80 64)(pt 80 80)(color 0 0 0)(line_width 2))
+		(line (pt 112 64)(pt 112 80)(color 0 0 0)(line_width 2))
+		(line (pt 112 80)(pt 128 80)(color 0 0 0)(line_width 2))
+		(rectangle (rect 16 16 136 88))
+	)
+	(annotation_block (parameter)(rect 88 -1544 312 -1502))
+)
+(symbol
+	(rect -64 -1336 88 -1248)
+	(text "CLK_DIVIDER" (rect 5 0 78 12)(font "Arial" ))
+	(text "inst58" (rect 24 72 53 84)(font "Arial" ))
+	(port
+		(pt 0 48)
+		(input)
+		(text "in_clk" (rect 0 0 28 12)(font "Arial" ))
+		(text "in_clk" (rect 21 43 49 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "reset" (rect 0 0 24 12)(font "Arial" ))
+		(text "reset" (rect 21 27 45 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+		(unused)
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pause" (rect 0 0 29 12)(font "Arial" ))
+		(text "pause" (rect 21 59 50 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+		(unused)
+	)
+	(port
+		(pt 152 48)
+		(output)
+		(text "out_clk" (rect 0 0 35 12)(font "Arial" ))
+		(text "out_clk" (rect 102 43 137 55)(font "Arial" ))
+		(line (pt 152 48)(pt 136 48))
+	)
+	(parameter
+		"period_InMHz"
+		"50"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"period_OutMiliSec"
+		"2"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(line (pt 48 80)(pt 64 80)(color 0 0 0)(line_width 2))
+		(line (pt 64 64)(pt 80 64)(color 0 0 0)(line_width 2))
+		(line (pt 64 80)(pt 64 64)(color 0 0 0)(line_width 2))
+		(line (pt 80 80)(pt 96 80)(color 0 0 0)(line_width 2))
+		(line (pt 96 64)(pt 112 64)(color 0 0 0)(line_width 2))
+		(line (pt 96 80)(pt 96 64)(color 0 0 0)(line_width 2))
+		(line (pt 80 64)(pt 80 80)(color 0 0 0)(line_width 2))
+		(line (pt 112 64)(pt 112 80)(color 0 0 0)(line_width 2))
+		(line (pt 112 80)(pt 128 80)(color 0 0 0)(line_width 2))
+		(rectangle (rect 16 16 136 88))
+	)
+	(annotation_block (parameter)(rect 88 -1384 312 -1342))
 )
 (connector
 	(pt 1344 -200)

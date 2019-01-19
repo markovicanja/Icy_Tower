@@ -200,7 +200,7 @@ applicable agreement for further details.
 	(input)
 	(rect 288 -416 456 -400)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reset" (rect 5 0 30 12)(font "Arial" ))
+	(text "reset" (rect 5 0 29 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -6939,64 +6939,6 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 5584 -1112 5766 -1070))
 )
 (symbol
-	(rect -624 -184 -472 -96)
-	(text "CLK_DIVIDER" (rect 5 0 78 12)(font "Arial" ))
-	(text "inst58" (rect 24 72 53 84)(font "Arial" ))
-	(port
-		(pt 0 48)
-		(input)
-		(text "in_clk" (rect 0 0 28 12)(font "Arial" ))
-		(text "in_clk" (rect 21 43 49 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 32)
-		(input)
-		(text "reset" (rect 0 0 24 12)(font "Arial" ))
-		(text "reset" (rect 21 27 45 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-		(unused)
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "pause" (rect 0 0 29 12)(font "Arial" ))
-		(text "pause" (rect 21 59 50 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-		(unused)
-	)
-	(port
-		(pt 152 48)
-		(output)
-		(text "out_clk" (rect 0 0 35 12)(font "Arial" ))
-		(text "out_clk" (rect 102 43 137 55)(font "Arial" ))
-		(line (pt 152 48)(pt 136 48))
-	)
-	(parameter
-		"period_InMHz"
-		"50"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"period_OutMiliSec"
-		"6"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(line (pt 48 80)(pt 64 80)(color 0 0 0)(line_width 2))
-		(line (pt 64 64)(pt 80 64)(color 0 0 0)(line_width 2))
-		(line (pt 64 80)(pt 64 64)(color 0 0 0)(line_width 2))
-		(line (pt 80 80)(pt 96 80)(color 0 0 0)(line_width 2))
-		(line (pt 96 64)(pt 112 64)(color 0 0 0)(line_width 2))
-		(line (pt 96 80)(pt 96 64)(color 0 0 0)(line_width 2))
-		(line (pt 80 64)(pt 80 80)(color 0 0 0)(line_width 2))
-		(line (pt 112 64)(pt 112 80)(color 0 0 0)(line_width 2))
-		(line (pt 112 80)(pt 128 80)(color 0 0 0)(line_width 2))
-		(rectangle (rect 16 16 136 88))
-	)
-	(annotation_block (parameter)(rect -472 -232 -248 -190))
-)
-(symbol
 	(rect 728 -1928 888 -1856)
 	(text "CMPX" (rect 5 0 34 12)(font "Arial" ))
 	(text "inst117" (rect 8 56 43 68)(font "Arial" ))
@@ -9220,6 +9162,64 @@ applicable agreement for further details.
 		(arc (pt 49 24)(pt 25 13)(rect -6 13 57 76))
 		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36))
 	)
+)
+(symbol
+	(rect -624 -184 -472 -96)
+	(text "CLK_DIVIDER" (rect 5 0 78 12)(font "Arial" ))
+	(text "inst58" (rect 24 72 53 84)(font "Arial" ))
+	(port
+		(pt 0 48)
+		(input)
+		(text "in_clk" (rect 0 0 28 12)(font "Arial" ))
+		(text "in_clk" (rect 21 43 49 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "reset" (rect 0 0 24 12)(font "Arial" ))
+		(text "reset" (rect 21 27 45 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+		(unused)
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pause" (rect 0 0 29 12)(font "Arial" ))
+		(text "pause" (rect 21 59 50 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+		(unused)
+	)
+	(port
+		(pt 152 48)
+		(output)
+		(text "out_clk" (rect 0 0 35 12)(font "Arial" ))
+		(text "out_clk" (rect 102 43 137 55)(font "Arial" ))
+		(line (pt 152 48)(pt 136 48))
+	)
+	(parameter
+		"period_InMHz"
+		"50"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"period_OutMiliSec"
+		"6"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(line (pt 48 80)(pt 64 80)(color 0 0 0)(line_width 2))
+		(line (pt 64 64)(pt 80 64)(color 0 0 0)(line_width 2))
+		(line (pt 64 80)(pt 64 64)(color 0 0 0)(line_width 2))
+		(line (pt 80 80)(pt 96 80)(color 0 0 0)(line_width 2))
+		(line (pt 96 64)(pt 112 64)(color 0 0 0)(line_width 2))
+		(line (pt 96 80)(pt 96 64)(color 0 0 0)(line_width 2))
+		(line (pt 80 64)(pt 80 80)(color 0 0 0)(line_width 2))
+		(line (pt 112 64)(pt 112 80)(color 0 0 0)(line_width 2))
+		(line (pt 112 80)(pt 128 80)(color 0 0 0)(line_width 2))
+		(rectangle (rect 16 16 136 88))
+	)
+	(annotation_block (parameter)(rect -472 -232 -248 -190))
 )
 (connector
 	(text "CLK" (rect 992 376 1013 388)(font "Arial" ))

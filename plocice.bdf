@@ -9204,7 +9204,7 @@ applicable agreement for further details.
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"period_OutMiliSec"
-		"6"
+		"4"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
@@ -13665,32 +13665,6 @@ applicable agreement for further details.
 	(pt 192 -160)
 )
 (connector
-	(text "1" (rect -176 -77 -164 -72)(font "Arial" )(vertical))
-	(pt -160 -56)
-	(pt -160 -80)
-	(bus)
-)
-(connector
-	(text "CLK" (rect -310 -48 -289 -36)(font "Arial" ))
-	(pt -272 -32)
-	(pt -320 -32)
-)
-(connector
-	(pt -160 48)
-	(pt -160 24)
-	(bus)
-)
-(connector
-	(text "START" (rect -312 -32 -278 -20)(font "Arial" ))
-	(pt -272 -16)
-	(pt -320 -16)
-)
-(connector
-	(pt -160 48)
-	(pt 16 48)
-	(bus)
-)
-(connector
 	(pt 16 -152)
 	(pt 16 48)
 	(bus)
@@ -13725,11 +13699,6 @@ applicable agreement for further details.
 	(pt 456 -696)
 	(pt 512 -696)
 	(bus)
-)
-(connector
-	(text "reset" (rect -307 -16 -283 -4)(font "Arial" ))
-	(pt -272 0)
-	(pt -320 0)
 )
 (connector
 	(text "reset" (rect 376 400 400 412)(font "Arial" ))
@@ -13888,5 +13857,36 @@ applicable agreement for further details.
 (connector
 	(pt 4328 624)
 	(pt 4264 624)
+)
+(connector
+	(text "1" (rect -176 -77 -164 -72)(font "Arial" )(vertical))
+	(pt -160 -56)
+	(pt -160 -80)
+	(bus)
+)
+(connector
+	(text "CLK" (rect -310 -48 -289 -36)(font "Arial" ))
+	(pt -272 -32)
+	(pt -320 -32)
+)
+(connector
+	(pt -160 48)
+	(pt -160 24)
+	(bus)
+)
+(connector
+	(text "START" (rect -312 -32 -278 -20)(font "Arial" ))
+	(pt -272 -16)
+	(pt -320 -16)
+)
+(connector
+	(pt 16 48)
+	(pt -160 48)
+	(bus)
+)
+(connector
+	(text "reset" (rect -307 -16 -283 -4)(font "Arial" ))
+	(pt -272 0)
+	(pt -320 0)
 )
 (junction (pt -448 -136))

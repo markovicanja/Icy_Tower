@@ -3510,7 +3510,7 @@ applicable agreement for further details.
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"period_OutMiliSec"
-		"6"
+		"4"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
@@ -3568,7 +3568,7 @@ applicable agreement for further details.
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"period_OutMiliSec"
-		"2"
+		"1"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
@@ -3584,6 +3584,63 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 136 88))
 	)
 	(annotation_block (parameter)(rect 88 -1384 312 -1342))
+)
+(symbol
+	(rect 1072 -592 1136 -544)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst77" (rect 3 37 32 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 37)(pt 31 37))
+		(line (pt 14 12)(pt 14 37))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
+)
+(symbol
+	(rect 1024 -576 1072 -544)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst78" (rect 3 21 32 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
 )
 (connector
 	(pt 1344 -200)
@@ -3811,11 +3868,6 @@ applicable agreement for further details.
 	(text "clkPromene" (rect 813 -544 870 -532)(font "Arial" ))
 	(pt 792 -528)
 	(pt 880 -528)
-)
-(connector
-	(text "padam" (rect 968 -592 1001 -580)(font "Arial" ))
-	(pt 960 -576)
-	(pt 1008 -576)
 )
 (connector
 	(pt 536 -816)
@@ -4830,6 +4882,20 @@ applicable agreement for further details.
 (connector
 	(pt 2944 584)
 	(pt 2880 584)
+)
+(connector
+	(pt 960 -576)
+	(pt 1072 -576)
+)
+(connector
+	(text "padam" (rect 1144 -584 1177 -572)(font "Arial" ))
+	(pt 1136 -568)
+	(pt 1184 -568)
+)
+(connector
+	(text "NA_PLOCICI" (rect 966 -576 1032 -564)(font "Arial" ))
+	(pt 1024 -560)
+	(pt 976 -560)
 )
 (junction (pt 1408 -824))
 (junction (pt 112 -1448))
